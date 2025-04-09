@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-orange-50 font-sans">
+  <header class="header">
+    <div class="container">
+      <h1 class="title">🌟 Customer Reviews</h1>
+      <p class="subtitle">See what food lovers are saying!</p>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="review-grid">
+      
+      <!-- Review Card -->
+      <div class="review-card">
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/80?img=1" alt="User" class="avatar">
+          <div>
+            <h3 class="user-name">Ayesha K.</h3>
+            <p class="user-role">Home Cook</p>
+          </div>
+        </div>
+        <p class="review-text">“The Mystery Box challenge was so much fun! I discovered a new favorite recipe.”</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Review Card -->
+      <div class="review-card">
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/80?img=5" alt="User" class="avatar">
+          <div>
+            <h3 class="user-name">Rahul M.</h3>
+            <p class="user-role">Food Blogger</p>
+          </div>
+        </div>
+        <p class="review-text">“I love how this platform encourages creativity. The challenges are inspiring!”</p>
+        <div class="stars">⭐⭐⭐⭐☆</div>
+      </div>
+
+      <!-- Review Card -->
+      <div class="review-card">
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/80?img=8" alt="User" class="avatar">
+          <div>
+            <h3 class="user-name">Sara J.</h3>
+            <p class="user-role">Culinary Student</p>
+          </div>
+        </div>
+        <p class="review-text">“Fusion Fiesta pushed my skills to the next level. Amazing experience!”</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    © 2025 Chef Competition | Eat. Rate. Repeat.
+  </footer>
+</body>
+</html>
+<!-- Add Comment Form -->
+<div class="comment-form bg-white rounded-2xl shadow-md p-6 mt-12 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-semibold text-orange-600 mb-4">Leave a Review</h2>
+    <form action="#" method="POST" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Your Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required
+               class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-400 focus:outline-none">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Your Comment</label>
+        <textarea name="comment" rows="4" placeholder="Write your comment here..." required
+                  class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-400 focus:outline-none"></textarea>
+      </div>
+      <button type="submit"
+              class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition">
+        ➕ Add Comment
+      </button>
+    </form>
+  </div>
+  

@@ -1,0 +1,4 @@
+.comment-form {
+    @apply bg-white rounded-2xl shadow-md p-6 mt-12;
+  }
+  
