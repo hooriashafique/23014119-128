@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Sharing Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body 
+  class="min-h-screen flex items-center justify-center bg-cover bg-center"
+  style="background-image: url('https://images.unsplash.com/photo-1506368249639-73a05d6f6488');"
+>
+
+  <!-- Overlay -->
+  <div class="bg-white bg-opacity-95 rounded-xl shadow-xl p-8 w-full max-w-md mx-4">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Create Your Account 🍽️</h2>
+    
+    <form>
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-semibold mb-1">Full Name</label>
+        <input type="text" id="name" name="name" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-semibold mb-1">Email Address</label>
+        <input type="email" id="email" name="email" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <div class="mb-4">
+        <label for="username" class="block text-gray-700 font-semibold mb-1">Username</label>
+        <input type="text" id="username" name="username" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <div class="mb-6">
+        <label for="password" class="block text-gray-700 font-semibold mb-1">Create Password</label>
+        <input type="password" id="password" name="password" required
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <a href="hompage.html" class="block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-lg text-center transition-all">Sign Up
+      </a>
+
+      <p class="mt-4 text-center text-sm text-gray-600">
+        Already have an account?
+        <a href="login.html" class="text-green-600 font-semibold hover:underline">Log in</a>
+      </p>
+    </form>
+  </div>
+ 
+</body>
+</html>
+
+
