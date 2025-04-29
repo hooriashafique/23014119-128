@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <style>
+        body {
+            background-color: #ecf0f1; /* Light gray background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            color: #2c3e50;
+        }
+        .profile-container {
+            background-color: #ffffff;
+            width: 360px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #1abc9c; /* Teal border */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        input[type="file"] {
+            margin: 10px 0 20px 0;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            background-color: #3498db; /* Calm blue button */
+            color: white;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #2980b9; /* Slightly darker blue on hover */
+            transform: scale(1.03);
+        }
+        h2 {
+            margin-bottom: 25px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <h2>My Profile</h2>
+        <img id="profilePic" src="default-profile.png" alt="Profile Picture">
+        
+        <input type="file" accept="image/*" onchange="changeProfilePic(event)">
+        
+        <input type="text" id="username" placeholder="Enter your name">
+        
+        <button onclick="saveProfile()">Save Profile</button>
+        <button onclick="goHome()">Home</button>
+    </div>
+
+    <script>
+        function changeProfilePic(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('profilePic').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function saveProfile() {
+            const name = document.getElementById('username').value;
+            if (name.trim() === "") {
+                alert("Please enter your name!");
+            } else {
+                alert("Profile saved successfully!");
+            }
+        }
+
+        function goHome() {
+            window.location.href = "hompage.html"; // Change if your homepage name is different
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Sharing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- ☰ Menu Button (always visible) -->
+  <button id="menuToggle"
+          class="fixed top-4 left-4 z-50 p-2 text-3xl cursor-pointer bg-red-600 text-white rounded focus:outline-none">
+    ☰
+  </button>
+
+  <!-- Sidebar -->
+  <div id="sidebar"
+       class="hidden fixed top-0 left-0 h-full w-64 bg-gray-800 text-white z-40 p-4 transition-transform duration-300">
+    <button class="absolute top-4 right-4 text-2xl" onclick="closeMenu()">×</button>
+    <nav class="mt-16 space-y-4 text-lg font-semibold">
+      <a href="hompage.html"        class="block hover:text-orange-400">Home</a>
+      <a href=recepie.html     class="block hover:text-orange-400">Recipes </a>
+      <a href="comment session.html"     class="block hover:text-orange-400">add coment</a>
+      <a href="comment session.html" class="block hover:text-orange-400">Reviews</a>
+      <a href="account.html"     class="block hover:text-orange-400">Account</a>
+    </nav>
+  </div>
+
+  <!-- Desktop Navbar (hidden on <md) -->
+  <nav class="hidden md:block bg-red-600 text-white pl-20">
+    <div class="max-w-7xl mx-auto px-4 py-3 grid grid-cols-2 md:grid-cols-5 text-center text-lg font-semibold">
+      <div>Home</div>
+      <div>Recipes </div>
+      <div>comment</div>
+      <div><a href="comment session.html">Reviews</a></div>
+      <div>Account</div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="text-center mt-8">
+    <h1 class="text-3xl font-bold text-orange-600">Interested in Recipes?</h1>
+  </div>
+
+  <!-- Recipe Categories -->
+  <div class="max-w-7xl mx-auto p-4 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6">
+    <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+      <p class="text-xl text-blue-600 font-semibold mb-2">Vegetarian Recipes</p>
+      <img src="C:\Users\Dr Ayaz Ali\OneDrive\Pictures\vegeterian.jpeg"
+           width="30%" class="rounded-lg mx-auto">
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+      <p class="text-xl text-blue-600 font-semibold mb-2">Non-Vegetarian Recipes</p>
+      <img src="C:\Users\Dr Ayaz Ali\OneDrive\Pictures\non vegetarian.jpeg"
+           width="30%" class="rounded-lg mx-auto">
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+      <p class="text-xl text-blue-600 font-semibold mb-2">5-Minute Cooking</p>
+      <img src="C:\Users\Dr Ayaz Ali\OneDrive\Pictures\5.jpeg"
+           width="30%" class="rounded-lg mx-auto">
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+      <p class="text-xl text-blue-600 font-semibold mb-2">Traditional Dishes</p>
+      <img src="C:\Users\Dr Ayaz Ali\OneDrive\Pictures\desi.jpeg"
+           width="30%" class="rounded-lg mx-auto">
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+      <p class="text-xl text-blue-600 font-semibold mb-2">Snacks</p>
+      <img src="C:\Users\Dr Ayaz Ali\OneDrive\Pictures\snacks.jpeg"
+           width="30%" class="rounded-lg mx-auto">
+    </div>
+  </div>
+
+  <!-- Next Page Link -->
+  <div class="text-center my-8">
+    <a href="competiton.html"
+       class="text-white bg-blue-500 hover:bg-blue-700 px-6 py-2 rounded-full transition-all">
+      Next Page
+    </a>
+  </div>
+
+  <!-- Sidebar Toggle Script -->
+  <script src="stript.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

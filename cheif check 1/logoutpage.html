@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+    <style>
+        body {
+            background-color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            color: #2c3e50;
+        }
+        .logout-container {
+            background-color: #ffffff;
+            width: 350px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #e74c3c; /* Nice logout red color */
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logout-container">
+        <h2>Logged Out</h2>
+        <p>You have been successfully logged out.</p>
+        <button onclick="goToHome()">Go to Account Page</button>
+    </div>
+
+    <script>
+        function goToHome() {
+            window.location.href = "login.html"; // link back to your Account Page
+        }
+    </script>
+
+</body>
+</html>

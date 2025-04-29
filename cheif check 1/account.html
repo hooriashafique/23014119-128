@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>accountpage</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+        }
+        .container {
+            background-color: white;
+            color: #333;
+            width: 320px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+        .login {
+            background-color: #1abc9c;
+            color: white;
+        }
+        .signup {
+            background-color: #3498db;
+            color: white;
+        }
+        .profile {
+            background-color: #9b59b6;
+            color: white;
+        }
+        .logout {
+            background-color: #e74c3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Account</h2>
+        <a href="login.html"><button class="login">Login</button></a>
+        <a href="signup.html"><button class="signup">Signup</button></a>
+        <a href="profile.html"><button class="profile">Profile</button></a>
+        <a href="logoutpage.html"><button class="logout">Logout</button></a>
+    </div>
+
+    <script>
+        function login() {
+            window.location.href = "login.html"; // Go to login.html
+        }
+        function signup() {
+            window.location.href = "signup.html"; // Go to signup.html
+        }
+        function profile() {
+            window.location.href = "profile.html"; // Go to profile.html
+        }
+        function logout() {
+            window.location.href = "logout.html"; // Go to logout.html (or any page you want)
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
